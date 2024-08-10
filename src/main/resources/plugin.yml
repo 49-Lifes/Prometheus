@@ -1,0 +1,10 @@
+name: Prometheus
+version: '${version}'
+main: info.preva1l.prometheus.Prometheus
+api-version: '1.19'
+authors: [Preva1l]
+description: The core for 49lifes.
+
+permissions:
+  prometheus.monthly:
+    default: true
