@@ -42,16 +42,16 @@ public class SeasonalCrateListener implements Listener {
                     }
                 }
             }
-/*
-                for (int i = 0; i <= 1; i++) {
-                    for (double j = 0; j <= 2; j += 0.5) {
-                        for (double k = 0; k <= 1; k++) {
-                            player.spawnParticle(Particle.SCRAPE, entryX + i, entryY + j, entryZ + k, 2, 0, 0, 0, 0);
-                            player.spawnParticle(Particle.WAX_ON, entryX + i, entryY + j - 0.1, entryZ + k, 2, 0, 0, 0, 0);
-                            player.spawnParticle(Particle.WAX_OFF, entryX + i, entryY + j + 0.1, entryZ + k, 2, 0, 0, 0, 0);
-                        }
-                    }
-                }
+
+//                for (int i = 0; i <= 1; i++) {
+//                    for (double j = 0; j <= 2; j += 0.5) {
+//                        for (double k = 0; k <= 1; k++) {
+//                            player.spawnParticle(Particle.SCRAPE, entryX + i, entryY + j, entryZ + k, 2, 0, 0, 0, 0);
+//                            player.spawnParticle(Particle.WAX_ON, entryX + i, entryY + j - 0.1, entryZ + k, 2, 0, 0, 0, 0);
+//                            player.spawnParticle(Particle.WAX_OFF, entryX + i, entryY + j + 0.1, entryZ + k, 2, 0, 0, 0, 0);
+//                        }
+//                    }
+//                }
                 //TODO: fix bc its broken af lol
                 for (double i : new double[]{0, 2, 0.5, 2, 0.5, 2, 1, 2}) {
                     double xOffset = (i == 1 || i == 2) ? 0.5 : 0; // Adjust the offset for the third and sixth particles
@@ -60,7 +60,7 @@ public class SeasonalCrateListener implements Listener {
                     player.spawnParticle(Particle.WAX_OFF, entryX + xOffset, entryY + i - 0.1, entryZ + zOffset, 2, 0, 0, 0, 0);
                     player.spawnParticle(Particle.WAX_ON, entryX + xOffset, entryY + i + 0.1, entryZ + zOffset, 2, 0, 0, 0, 0);
                 }
-*/
+
         }
     }
 

@@ -8,3 +8,5 @@ description: The core for 49lifes.
 permissions:
   prometheus.monthly:
     default: true
+  prometheus.hat:
+    default: true
